@@ -16,8 +16,8 @@ jobs:
       - name: Set up Node.js 16
         uses: actions/setup-node@v3
         with:
-          cache: 'npm'
-          node-version-file: 'package.json'
+          cache: "npm"
+          node-version-file: "package.json"
       - name: Install dependencies
         run: npm ci
       - name: Build
@@ -32,8 +32,8 @@ jobs:
       - name: Set up Node.js 16
         uses: actions/setup-node@v3
         with:
-          cache: 'npm'
-          node-version-file: 'package.json'
+          cache: "npm"
+          node-version-file: "package.json"
       - name: Install JS dependencies
         run: npm ci
       - name: Create e2e logs directory
@@ -75,9 +75,9 @@ jobs:
       - name: Report JS build to Ketryx
         uses: Ketryx/ketryx-github-action@v1
         with:
-          ketryx-url: https://demo.ketryx.com
-          project: KXPRJ4NRJJ0HAP29QJADYG6X96R15V3
-          api-key: ${{ secrets.KETRYX_API_KEY }}
+          ketryx-url: http://localhost:3000/
+          project: KXPRJ3DAMYDDETR99QVK54ZFSFW2K4A
+          api-key: KXTK_BJJ5BRTYZWJV8NG2QKWV5VBR735XS9NNQBH9PZQ93AQZFXWMPEBTM7D918ZA7MJR4YZ4ZFWA05FY9
 
           build-name: client-js
 
@@ -112,9 +112,9 @@ jobs:
       - name: Report Python build to Ketryx
         uses: Ketryx/ketryx-github-action@v1
         with:
-          ketryx-url: ${{ secrets.KETRYX_URL }}
-          project: ${{ secrets.KETRYX_PROJECT }}
-          api-key: ${{ secrets.KETRYX_API_KEY }}
+          ketryx-url: http://localhost:3000/
+          project: KXPRJ3DAMYDDETR99QVK54ZFSFW2K4A
+          api-key: KXTK_BJJ5BRTYZWJV8NG2QKWV5VBR735XS9NNQBH9PZQ93AQZFXWMPEBTM7D918ZA7MJR4YZ4ZFWA05FY9
 
           build-name: server-python
 
@@ -126,9 +126,9 @@ jobs:
       - name: Check Ketryx release
         uses: Ketryx/ketryx-github-action@v1
         with:
-          ketryx-url: ${{ secrets.KETRYX_URL }}
-          project: ${{ secrets.KETRYX_PROJECT }}
-          api-key: ${{ secrets.KETRYX_API_KEY }}
+          ketryx-url: http://localhost:3000/
+          project: KXPRJ3DAMYDDETR99QVK54ZFSFW2K4A
+          api-key: KXTK_BJJ5BRTYZWJV8NG2QKWV5VBR735XS9NNQBH9PZQ93AQZFXWMPEBTM7D918ZA7MJR4YZ4ZFWA05FY9
 
           # It's important to assign a separate name to this build, so that it does not supersede
           # the other build that reports test results.
