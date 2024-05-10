@@ -75,7 +75,7 @@ jobs:
       - name: Report JS build to Ketryx
         uses: Ketryx/ketryx-github-action@v1
         with:
-          ketryx-url: http://localhost:3000/
+          ketryx-url: https://ketryx-hannaz.eu.ngrok.io
           project: KXPRJ3DAMYDDETR99QVK54ZFSFW2K4A
           api-key: KXTK_BJJ5BRTYZWJV8NG2QKWV5VBR735XS9NNQBH9PZQ93AQZFXWMPEBTM7D918ZA7MJR4YZ4ZFWA05FY9
 
@@ -112,7 +112,7 @@ jobs:
       - name: Report Python build to Ketryx
         uses: Ketryx/ketryx-github-action@v1
         with:
-          ketryx-url: http://localhost:3000/
+          ketryx-url: https://ketryx-hannaz.eu.ngrok.io
           project: KXPRJ3DAMYDDETR99QVK54ZFSFW2K4A
           api-key: KXTK_BJJ5BRTYZWJV8NG2QKWV5VBR735XS9NNQBH9PZQ93AQZFXWMPEBTM7D918ZA7MJR4YZ4ZFWA05FY9
 
@@ -126,7 +126,7 @@ jobs:
       - name: Check Ketryx release
         uses: Ketryx/ketryx-github-action@v1
         with:
-          ketryx-url: http://localhost:3000/
+          ketryx-url: https://ketryx-hannaz.eu.ngrok.io
           project: KXPRJ3DAMYDDETR99QVK54ZFSFW2K4A
           api-key: KXTK_BJJ5BRTYZWJV8NG2QKWV5VBR735XS9NNQBH9PZQ93AQZFXWMPEBTM7D918ZA7MJR4YZ4ZFWA05FY9
 
